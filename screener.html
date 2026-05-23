@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Market Screener</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+<h1>Screener</h1>
+<nav><a href="index.html">Dashboard</a></nav>
+</header>
+
+<section class="toolbar">
+<input id="search" placeholder="Cerca ticker..." onkeyup="filterTable()">
+<select id="preset">
+<option>Tutti</option>
+<option>Momentum</option>
+<option>Breakout</option>
+<option>Trend</option>
+</select>
+</section>
+
+<table id="screenTable">
+<thead><tr><th>Ticker</th><th>Mercato</th><th>Trend</th><th>RSI</th></tr></thead>
+<tbody>
+<tr><td>AAPL</td><td>USA</td><td>Bullish</td><td>58</td></tr>
+<tr><td>ENEL</td><td>Italia</td><td>Bullish</td><td>61</td></tr>
+<tr><td>BTCUSD</td><td>Crypto</td><td>Neutral</td><td>49</td></tr>
+<tr><td>EURUSD</td><td>Forex</td><td>Bearish</td><td>42</td></tr>
+</tbody>
+</table>
+<script src="js/screener.js"></script>
+</body></html>

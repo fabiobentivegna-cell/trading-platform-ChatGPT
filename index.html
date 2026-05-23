@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Market Dashboard</h1>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="screener.html">Screener</a>
+  </nav>
+</header>
+
+<section class="toolbar">
+<select id="marketSelect">
+<option>USA</option><option>Italia</option><option>Forex</option>
+<option>Crypto</option><option>Commodities</option>
+</select>
+<input id="symbolInput" value="NASDAQ:AAPL"/>
+<button onclick="loadChart()">Carica grafico</button>
+</section>
+
+<main class="layout">
+<div class="main-panel">
+<div id="tvchart"></div>
+</div>
+<aside class="side-panel">
+<h3>Watchlist</h3>
+<ul>
+<li>NASDAQ:AAPL</li><li>NASDAQ:MSFT</li>
+<li>BIT:ENEL</li><li>BINANCE:BTCUSDT</li>
+</ul>
+<p>Indicatori: RSI, SMA, EMA, MACD (via TradingView)</p>
+</aside>
+</main>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
